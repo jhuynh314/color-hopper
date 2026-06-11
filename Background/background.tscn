@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://biu8rq0dk0kwj"]
+
+[ext_resource type="Texture2D" uid="uid://dvlyf1heuu5st" path="res://square.png" id="1_5nc5v"]
+[ext_resource type="Script" uid="uid://bfajtjhafxnc4" path="res://Background/background.gd" id="1_jdlmo"]
+
+[node name="Background" type="Node2D" unique_id=1074621605]
+script = ExtResource("1_jdlmo")
+colorsToChangeTo = Array[int]([0, 1, 4])
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=89630830]
+scale = Vector2(16.93558, 15.18421)
+texture = ExtResource("1_5nc5v")

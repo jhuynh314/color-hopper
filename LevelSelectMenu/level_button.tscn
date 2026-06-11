@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cyqlrpo1cd6pg"]
+
+[ext_resource type="Texture2D" uid="uid://dkbiex5p4ik6i" path="res://icon.svg" id="1_p1qa6"]
+[ext_resource type="Script" uid="uid://sbcjcrigw4d3" path="res://LevelSelectMenu/level_button.gd" id="2_0xwu8"]
+
+[node name="LevelButton" type="Button" unique_id=6825471]
+offset_right = 163.0
+offset_bottom = 136.0
+scale = Vector2(0.6771797, 0.6771797)
+icon = ExtResource("1_p1qa6")
+script = ExtResource("2_0xwu8")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

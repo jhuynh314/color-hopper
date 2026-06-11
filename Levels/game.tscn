@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cg23iy3387oax"]
+
+[ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="1_uxjsv"]
+[ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="2_6isyr"]
+[ext_resource type="PackedScene" uid="uid://biu8rq0dk0kwj" path="res://Background/background.tscn" id="3_6isyr"]
+[ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="5_jycte"]
+[ext_resource type="PackedScene" uid="uid://b0jqdh0iuq3ye" path="res://Obstacles/hollowBlock.tscn" id="5_uda3f"]
+
+[node name="Game" type="Node2D" unique_id=578359100]
+scale = Vector2(1.0141927, 0.9564188)
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("3_6isyr")]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(517.65314, 224.79692)
+scale = Vector2(21.376667, 17.974691)
+colorsToChangeTo = Array[int]([1, 6, 2])
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=450061752 instance=ExtResource("2_6isyr")]
+position = Vector2(142, 31)
+
+[node name="Blocks" type="Node2D" parent="." unique_id=638327735]
+
+[node name="Block" parent="Blocks" unique_id=1830325737 instance=ExtResource("1_uxjsv")]
+position = Vector2(152.00003, 77.000015)
+scale = Vector2(9.7790985, 1.3577799)
+myColor = 0
+
+[node name="Block2" parent="Blocks" unique_id=945510891 instance=ExtResource("1_uxjsv")]
+modulate = Color(1, 0.647, 0, 1)
+position = Vector2(371.72424, 23.002476)
+scale = Vector2(10, 1)
+myColor = 2
+
+[node name="Block3" parent="Blocks" unique_id=2041001447 instance=ExtResource("1_uxjsv")]
+modulate = Color(0.294, 0, 0.51, 1)
+position = Vector2(370.73825, -32.41258)
+scale = Vector2(10, 1.086)
+myColor = 6
+
+[node name="Block4" parent="Blocks" unique_id=124016676 instance=ExtResource("1_uxjsv")]
+modulate = Color(1, 0.647, 0, 1)
+position = Vector2(371.7242, -87.82762)
+scale = Vector2(10, 1)
+myColor = 2
+
+[node name="Block5" parent="Blocks" unique_id=1572732011 instance=ExtResource("1_uxjsv")]
+modulate = Color(0.294, 0, 0.51, 1)
+position = Vector2(370.73825, -151.60722)
+scale = Vector2(10, 1.086)
+myColor = 6
+
+[node name="HollowBlock" parent="Blocks" unique_id=815773050 instance=ExtResource("5_uda3f")]
+position = Vector2(125.22276, -9.410103)
+scale = Vector2(5, 0.5)
+
+[node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("5_jycte")]
+position = Vector2(211.00526, 13.592361)
+scale = Vector2(3.6718051, 3.6718051)

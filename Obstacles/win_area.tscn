@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://j82eso8di2j7"]
+
+[ext_resource type="Script" uid="uid://ch8wls0tifnbo" path="res://Obstacles/win_area.gd" id="1_321ih"]
+[ext_resource type="Texture2D" uid="uid://dkbiex5p4ik6i" path="res://icon.svg" id="1_r387l"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_321ih"]
+
+[node name="WinArea" type="Area2D" unique_id=726625097]
+script = ExtResource("1_321ih")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1036675680]
+scale = Vector2(0.15381967, 0.15328386)
+texture = ExtResource("1_r387l")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=808706967]
+shape = SubResource("RectangleShape2D_321ih")
+
+[node name="Timer" type="Timer" parent="." unique_id=1157936914]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

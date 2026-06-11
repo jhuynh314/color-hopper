@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b0jqdh0iuq3ye"]
+
+[ext_resource type="Script" uid="uid://ooin3jwrntnr" path="res://Obstacles/hollowBlock.gd" id="1_ih1x3"]
+[ext_resource type="Texture2D" uid="uid://0g3xhfj4b0t4" path="res://squareBlock.png" id="2_ih1x3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih1x3"]
+size = Vector2(40, 40)
+
+[node name="HollowBlock" type="StaticBody2D" unique_id=815773050 groups=["Blocks"]]
+script = ExtResource("1_ih1x3")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="." unique_id=2078880615]
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+scale = Vector2(1.0032113, 1)
+texture = ExtResource("2_ih1x3")
+patch_margin_left = 1
+patch_margin_top = 1
+patch_margin_right = 1
+patch_margin_bottom = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1416152553]
+shape = SubResource("RectangleShape2D_ih1x3")
