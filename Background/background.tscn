@@ -2,13 +2,49 @@
 
 [ext_resource type="Texture2D" uid="uid://dvlyf1heuu5st" path="res://square.png" id="1_5nc5v"]
 [ext_resource type="Script" uid="uid://bfajtjhafxnc4" path="res://Background/background.gd" id="1_jdlmo"]
+[ext_resource type="PackedScene" uid="uid://dby5p80dbjjka" path="res://Background/box_select.tscn" id="3_msi1s"]
 
 [node name="Background" type="Node2D" unique_id=1074621605]
-modulate = Color(0, 0, 0, 1)
-scale = Vector2(21.846153, 16.421053)
 script = ExtResource("1_jdlmo")
 colorsToChangeTo = Array[int]([0, 1, 4])
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=89630830]
-scale = Vector2(16.93558, 15.18421)
+scale = Vector2(300, 180)
 texture = ExtResource("1_5nc5v")
+
+[node name="Colors" type="Node2D" parent="." unique_id=828700636]
+position = Vector2(-526.00006, 278.00003)
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="boxSelect" parent="Colors" unique_id=1416572789 instance=ExtResource("3_msi1s")]
+metadata/_edit_use_anchors_ = true
+
+[node name="boxSelect2" parent="Colors" unique_id=537415176 instance=ExtResource("3_msi1s")]
+offset_left = 64.0
+offset_right = 64.0
+metadata/_edit_use_anchors_ = true
+
+[node name="boxSelect3" parent="Colors" unique_id=1389385277 instance=ExtResource("3_msi1s")]
+offset_left = 128.0
+offset_right = 128.0
+metadata/_edit_use_anchors_ = true
+
+[node name="boxSelect4" parent="Colors" unique_id=699086103 instance=ExtResource("3_msi1s")]
+offset_left = 192.0
+offset_right = 192.0
+metadata/_edit_use_anchors_ = true
+
+[node name="boxSelect5" parent="Colors" unique_id=559528317 instance=ExtResource("3_msi1s")]
+offset_left = 256.0
+offset_right = 256.0
+metadata/_edit_use_anchors_ = true
+
+[node name="boxSelect6" parent="Colors" unique_id=1631309030 instance=ExtResource("3_msi1s")]
+offset_left = 320.0
+offset_right = 320.0
+metadata/_edit_use_anchors_ = true
+
+[node name="boxSelect7" parent="Colors" unique_id=1990299565 instance=ExtResource("3_msi1s")]
+offset_left = 384.0
+offset_right = 384.0
+metadata/_edit_use_anchors_ = true

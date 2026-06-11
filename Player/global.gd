@@ -2,6 +2,7 @@ extends Node2D
 
 var gravity = 1000
 enum MainColors {BLACK, RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET}
+
 var colorToLayerDictionary: Dictionary = {
 	MainColors.BLACK: 1,
 	MainColors.RED: 2,

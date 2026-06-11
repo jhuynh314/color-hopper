@@ -9,10 +9,6 @@
 
 [node name="Level1" type="Node2D" unique_id=268247461]
 
-[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_ujo87")]
-myColor = 5
-colorsToChangeTo = Array[int]([])
-
 [node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("2_hvgxt")]
 metadata/_edit_lock_ = true
 
@@ -79,3 +75,8 @@ myColor = 1
 modulate = Color(0, 0, 1, 1)
 position = Vector2(-516, 161)
 myColor = 5
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_ujo87")]
+z_index = -1
+myColor = 5
+colorsToChangeTo = Array[int]([])

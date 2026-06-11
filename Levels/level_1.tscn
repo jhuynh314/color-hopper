@@ -9,10 +9,12 @@
 [node name="Level1" type="Node2D" unique_id=268247461]
 
 [node name="Background" parent="." unique_id=1074621605 instance=ExtResource("2_rfktq")]
+scale = Vector2(1.33, 1)
 myColor = 0
 colorsToChangeTo = Array[int]([])
 
 [node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("1_rf6l5")]
+visible = false
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." unique_id=450061752 instance=ExtResource("2_syshm")]
