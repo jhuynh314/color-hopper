@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bgpl4q3iintul"]
+
+[ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="2_o0i1k"]
+[ext_resource type="PackedScene" uid="uid://da0f6jkfvx6ot" path="res://Background/kill_zone.tscn" id="3_a0qvo"]
+
+[node name="GameArea" type="Node2D" unique_id=642274818]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=226645098]
+metadata/_edit_lock_ = true
+
+[node name="Boarder Left" parent="." unique_id=1830325737 instance=ExtResource("2_o0i1k")]
+position = Vector2(-581.5053, 5.2278285)
+rotation = 1.5707964
+scale = Vector2(40, 1.358)
+myColor = 0
+
+[node name="Boarder Top" parent="." unique_id=1136662599 instance=ExtResource("2_o0i1k")]
+position = Vector2(-11.832154, -353.40167)
+scale = Vector2(66.967445, 1.3577797)
+myColor = 0
+
+[node name="Boarder Right" parent="." unique_id=2104704275 instance=ExtResource("2_o0i1k")]
+position = Vector2(582.43164, 1.045569)
+rotation = 1.5707964
+scale = Vector2(44.013226, 1.3577797)
+myColor = 0
+
+[node name="KillZone" parent="." unique_id=2092283667 instance=ExtResource("3_a0qvo")]
+position = Vector2(0, 452.73053)

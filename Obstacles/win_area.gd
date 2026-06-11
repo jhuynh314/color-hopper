@@ -7,7 +7,7 @@ func _on_body_entered(body: Node2D) -> void:
 	print("You win")
 	GlobalVariables.levelsCompletedDictionary[currentLevel] = true
 	GlobalVariables.levelsUnlockedDictionary[(currentLevel+1) % 10] = true
-	Engine.time_scale = 0.5
+	Engine.time_scale = 0.1
 	$Timer.start()
 
 

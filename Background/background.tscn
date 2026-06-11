@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://bfajtjhafxnc4" path="res://Background/background.gd" id="1_jdlmo"]
 
 [node name="Background" type="Node2D" unique_id=1074621605]
+modulate = Color(0, 0, 0, 1)
+scale = Vector2(21.846153, 16.421053)
 script = ExtResource("1_jdlmo")
 colorsToChangeTo = Array[int]([0, 1, 4])
 

@@ -16,6 +16,3 @@ shape = SubResource("RectangleShape2D_4ntmi")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=412307936]
 scale = Vector2(5.0362515, 4.996249)
 texture = ExtResource("2_4ntmi")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=34609765]
-zoom = Vector2(3, 3)

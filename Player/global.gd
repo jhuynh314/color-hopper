@@ -50,5 +50,5 @@ var levelsCompletedDictionary: Dictionary = {
 }
 
 var levelToSceneDictionary: Dictionary = {
-	1: "res://Levels/game.tscn"
+	1: "res://Levels/level_1.tscn"
 }

@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://bwsewmio7ir04"]
+
+[ext_resource type="PackedScene" uid="uid://bgpl4q3iintul" path="res://Background/game_area.tscn" id="1_rf6l5"]
+[ext_resource type="PackedScene" uid="uid://biu8rq0dk0kwj" path="res://Background/background.tscn" id="2_rfktq"]
+[ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="2_syshm"]
+[ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="3_rfktq"]
+[ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="4_0urlm"]
+[ext_resource type="PackedScene" uid="uid://dk1sni1ao3nqh" path="res://Obstacles/color_power.tscn" id="6_rfktq"]
+
+[node name="Level1" type="Node2D" unique_id=268247461]
+
+[node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("1_rf6l5")]
+metadata/_edit_lock_ = true
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("2_rfktq")]
+colorsToChangeTo = Array[int]([])
+
+[node name="Player" parent="." unique_id=450061752 instance=ExtResource("2_syshm")]
+position = Vector2(-402, -69)
+metadata/_edit_lock_ = true
+
+[node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("3_rfktq")]
+position = Vector2(249, -46)
+scale = Vector2(5, 5)
+metadata/_edit_lock_ = true
+
+[node name="Block" parent="." unique_id=1830325737 instance=ExtResource("4_0urlm")]
+position = Vector2(-392, 41)
+scale = Vector2(8, 2)
+myColor = 0
+
+[node name="ColorPower" parent="." unique_id=1076691979 instance=ExtResource("6_rfktq")]
+modulate = Color(1, 0.647, 0, 1)
+position = Vector2(-327, -25)
+myColor = 2

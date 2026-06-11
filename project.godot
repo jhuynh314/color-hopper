@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Color hopper"
-run/main_scene="uid://cg23iy3387oax"
+run/main_scene="uid://bot5kpw8b3p8i"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
