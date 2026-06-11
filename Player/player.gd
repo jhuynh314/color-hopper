@@ -1,8 +1,8 @@
-extends CharacterBody2D
+class_name Player extends CharacterBody2D
 
 var direction_x: float
 var speed: int = 200
-var jumpStrength: int = 400
+var jumpStrength: int = 500
 
 
 func _physics_process(delta: float) -> void:

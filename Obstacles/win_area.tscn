@@ -6,6 +6,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_321ih"]
 
 [node name="WinArea" type="Area2D" unique_id=726625097]
+collision_layer = 0
+collision_mask = 256
 script = ExtResource("1_321ih")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1036675680]

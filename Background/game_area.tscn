@@ -27,3 +27,5 @@ myColor = 0
 
 [node name="KillZone" parent="." unique_id=2092283667 instance=ExtResource("3_a0qvo")]
 position = Vector2(0, 452.73053)
+collision_layer = 0
+collision_mask = 256

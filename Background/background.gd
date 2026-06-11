@@ -28,4 +28,5 @@ func updateObjects(color: GlobalVariables.MainColors) -> void:
 		block.updateWithBackgroundColor(color)
 
 func addColor(color: GlobalVariables.MainColors):
+	print("receiving signal")
 	colorsToChangeTo.append(color)

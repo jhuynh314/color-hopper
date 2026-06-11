@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://b5184tjtqymab"]
+
+[ext_resource type="PackedScene" uid="uid://biu8rq0dk0kwj" path="res://Background/background.tscn" id="1_bcgyv"]
+[ext_resource type="PackedScene" uid="uid://bgpl4q3iintul" path="res://Background/game_area.tscn" id="2_fbld2"]
+[ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="3_s275v"]
+[ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="4_pml6m"]
+[ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="5_vltsr"]
+
+[node name="Level2" type="Node2D" unique_id=268247461]
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_bcgyv")]
+myColor = 0
+colorsToChangeTo = Array[int]([])
+
+[node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("2_fbld2")]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=450061752 instance=ExtResource("3_s275v")]
+position = Vector2(-316, 21)
+
+[node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("4_pml6m")]
+position = Vector2(366, 170)
+scale = Vector2(5, 5)
+currentLevel = 2
+
+[node name="Block" parent="." unique_id=1830325737 instance=ExtResource("5_vltsr")]
+position = Vector2(-319, 120)
+scale = Vector2(7.1600037, 2)
+
+[node name="Block2" parent="." unique_id=1332099716 instance=ExtResource("5_vltsr")]
+position = Vector2(-110.00001, 41)
+scale = Vector2(7.1600037, 2)
+
+[node name="Block3" parent="." unique_id=490975408 instance=ExtResource("5_vltsr")]
+position = Vector2(78.000015, -47)
+scale = Vector2(7.1600037, 2)
+
+[node name="Block4" parent="." unique_id=885409068 instance=ExtResource("5_vltsr")]
+position = Vector2(369, 268)
+scale = Vector2(7.1600037, 2)
+
+[node name="Label" type="Label" parent="." unique_id=1435483611]
+offset_left = -512.0
+offset_top = -274.0
+offset_right = -62.0
+offset_bottom = -205.0
+theme_override_font_sizes/font_size = 50
+text = "SPACEBAR to jump"
+
+[node name="Label2" type="Label" parent="." unique_id=939147787]
+offset_left = -235.0
+offset_top = 217.0
+offset_right = 215.0
+offset_bottom = 358.0
+theme_override_font_sizes/font_size = 50
+text = "↓ Don't Fall ↓"
+horizontal_alignment = 1
