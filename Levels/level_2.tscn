@@ -4,54 +4,125 @@
 [ext_resource type="PackedScene" uid="uid://bgpl4q3iintul" path="res://Background/game_area.tscn" id="2_fbld2"]
 [ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="3_s275v"]
 [ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="4_pml6m"]
+[ext_resource type="PackedScene" uid="uid://dhd5vebd5x326" path="res://Obstacles/moving_color_power.tscn" id="5_fbld2"]
 [ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="5_vltsr"]
 
 [node name="Level2" type="Node2D" unique_id=268247461]
-
-[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_bcgyv")]
-myColor = 0
-colorsToChangeTo = Array[int]([])
 
 [node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("2_fbld2")]
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." unique_id=450061752 instance=ExtResource("3_s275v")]
-position = Vector2(-316, 21)
+position = Vector2(-516, 129)
 
 [node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("4_pml6m")]
-position = Vector2(366, 170)
+position = Vector2(-488, -264)
 scale = Vector2(5, 5)
-currentLevel = 2
+currentLevel = 4
 
 [node name="Block" parent="." unique_id=1830325737 instance=ExtResource("5_vltsr")]
-position = Vector2(-319, 120)
-scale = Vector2(7.1600037, 2)
+position = Vector2(-486, 196)
+scale = Vector2(8.200001, 2)
+myColor = 0
 
-[node name="Block2" parent="." unique_id=1332099716 instance=ExtResource("5_vltsr")]
-position = Vector2(-110.00001, 41)
-scale = Vector2(7.1600037, 2)
+[node name="Block2" parent="." unique_id=335634130 instance=ExtResource("5_vltsr")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-244, 196)
+scale = Vector2(8.200001, 2)
+myColor = 5
 
-[node name="Block3" parent="." unique_id=490975408 instance=ExtResource("5_vltsr")]
-position = Vector2(78.000015, -47)
-scale = Vector2(7.1600037, 2)
+[node name="Block3" parent="." unique_id=98159873 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(0, 196)
+scale = Vector2(8.200001, 2)
 
-[node name="Block4" parent="." unique_id=885409068 instance=ExtResource("5_vltsr")]
-position = Vector2(369, 268)
-scale = Vector2(7.1600037, 2)
+[node name="Block4" parent="." unique_id=1079091424 instance=ExtResource("5_vltsr")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(239, 196)
+scale = Vector2(8.200001, 2)
+myColor = 5
 
-[node name="Label" type="Label" parent="." unique_id=1435483611]
-offset_left = -512.0
-offset_top = -274.0
-offset_right = -62.0
-offset_bottom = -205.0
-theme_override_font_sizes/font_size = 50
-text = "SPACEBAR to jump"
+[node name="Block10" parent="." unique_id=88624441 instance=ExtResource("5_vltsr")]
+position = Vector2(-486, -186)
+scale = Vector2(8.200001, 2)
+myColor = 0
 
-[node name="Label2" type="Label" parent="." unique_id=939147787]
-offset_left = -235.0
-offset_top = 217.0
-offset_right = 215.0
-offset_bottom = 358.0
-theme_override_font_sizes/font_size = 50
-text = "↓ Don't Fall ↓"
+[node name="Block11" parent="." unique_id=603314226 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-244, -186)
+scale = Vector2(8.200001, 2)
+
+[node name="Block12" parent="." unique_id=1190011443 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(0, -186)
+scale = Vector2(8.200001, 2)
+myColor = 3
+
+[node name="Block14" parent="." unique_id=689461190 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(-384, -294.99997)
+rotation = 1.5707964
+scale = Vector2(12.960001, 2)
+myColor = 3
+
+[node name="Block13" parent="." unique_id=419591312 instance=ExtResource("5_vltsr")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(239, -186)
+scale = Vector2(8.200001, 2)
+myColor = 5
+
+[node name="Block15" parent="." unique_id=1548606238 instance=ExtResource("5_vltsr")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-122, -279)
+rotation = 1.5707964
+scale = Vector2(11.400001, 2)
+myColor = 5
+
+[node name="Block5" parent="." unique_id=1917216114 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(487, 196)
+scale = Vector2(8.200001, 2)
+
+[node name="Block6" parent="." unique_id=350775231 instance=ExtResource("5_vltsr")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(487, 100)
+scale = Vector2(8.200001, 2)
+myColor = 5
+
+[node name="Block8" parent="." unique_id=273163809 instance=ExtResource("5_vltsr")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(487, -92)
+scale = Vector2(8.200001, 2)
+myColor = 5
+
+[node name="Block9" parent="." unique_id=1396183647 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(487, -188)
+scale = Vector2(8.200001, 2)
+
+[node name="Block7" parent="." unique_id=680427683 instance=ExtResource("5_vltsr")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(487, 4)
+scale = Vector2(8.200001, 2)
+
+[node name="MovingColorPower2" parent="." unique_id=311302964 instance=ExtResource("5_fbld2")]
+modulate = Color(1, 1, 0, 1)
+position = Vector2(465, -254)
+gravity_scale = 0.0
+myColor = 3
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_bcgyv")]
+z_index = -1
+myColor = 5
+colorsToChangeTo = Array[int]([5, 1])
+metadata/_edit_lock_ = true
+
+[node name="blackText2" type="Label" parent="." unique_id=472550707]
+modulate = Color(0, 0, 0, 1)
+offset_left = -351.0
+offset_top = 260.0
+offset_right = 153.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 30
+text = "← Watch your color order"
 horizontal_alignment = 1

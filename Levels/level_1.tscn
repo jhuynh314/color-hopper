@@ -5,43 +5,134 @@
 [ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="2_syshm"]
 [ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="3_rfktq"]
 [ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="4_0urlm"]
+[ext_resource type="Script" uid="uid://djv6frpddqoyj" path="res://Levels/SpecialLabels/labelChange.gd" id="6_rfktq"]
+[ext_resource type="PackedScene" uid="uid://dhd5vebd5x326" path="res://Obstacles/moving_color_power.tscn" id="7_0urlm"]
 
 [node name="Level1" type="Node2D" unique_id=268247461]
 
 [node name="Background" parent="." unique_id=1074621605 instance=ExtResource("2_rfktq")]
-scale = Vector2(1.33, 1)
 myColor = 0
 colorsToChangeTo = Array[int]([])
+metadata/_edit_lock_ = true
 
 [node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("1_rf6l5")]
-visible = false
 metadata/_edit_lock_ = true
 
 [node name="Player" parent="." unique_id=450061752 instance=ExtResource("2_syshm")]
-position = Vector2(-192, 8)
+position = Vector2(-416, -282)
 
 [node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("3_rfktq")]
-position = Vector2(312.99997, 48.999992)
+position = Vector2(507, 145.00002)
 scale = Vector2(5, 5)
 
 [node name="Block" parent="." unique_id=1830325737 instance=ExtResource("4_0urlm")]
-position = Vector2(9.536743e-07, 120)
-scale = Vector2(57.440002, 2)
+position = Vector2(-241, -37.999985)
+scale = Vector2(35.520004, 2)
+
+[node name="Block3" parent="." unique_id=203402160 instance=ExtResource("4_0urlm")]
+position = Vector2(423, 9)
+scale = Vector2(17.480003, 2)
+myColor = 5
+
+[node name="Block5" parent="." unique_id=2026277810 instance=ExtResource("4_0urlm")]
+position = Vector2(270, 110)
+rotation = 1.5707964
+scale = Vector2(12.040003, 2)
+myColor = 5
+
+[node name="Block4" parent="." unique_id=281011983 instance=ExtResource("4_0urlm")]
+position = Vector2(-187.99997, -61)
+scale = Vector2(4.920004, -4.2)
+
+[node name="Block2" parent="." unique_id=1529669855 instance=ExtResource("4_0urlm")]
+position = Vector2(320.99997, 224)
+scale = Vector2(27.560005, 2)
+
+[node name="Block6" parent="." unique_id=888455779 instance=ExtResource("4_0urlm")]
+position = Vector2(-348, 224)
+scale = Vector2(27.600006, 2)
 
 [node name="Label" type="Label" parent="." unique_id=675826537]
-offset_left = -367.0
-offset_top = -237.0
-offset_right = -68.0
-offset_bottom = -168.0
-theme_override_font_sizes/font_size = 50
+offset_left = -557.0
+offset_top = -238.0
+offset_right = -214.0
+offset_bottom = -169.0
+theme_override_font_sizes/font_size = 30
 text = "A & D to move"
+horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="." unique_id=2047449442]
-offset_left = 158.0
-offset_top = -157.0
-offset_right = 467.0
-offset_bottom = -16.0
-theme_override_font_sizes/font_size = 50
-text = "Get to here
-↓"
+offset_left = 283.0
+offset_top = 42.0
+offset_right = 592.0
+offset_bottom = 183.0
+theme_override_font_sizes/font_size = 30
+text = "Go here   ↓"
 horizontal_alignment = 1
+
+[node name="Label5" type="Label" parent="." unique_id=946353822]
+offset_left = -175.0
+offset_top = 146.0
+offset_right = 134.0
+offset_bottom = 287.0
+theme_override_font_sizes/font_size = 30
+text = "Don't fall 
+↓↓↓↓"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=672495160]
+offset_left = -189.0
+offset_top = -193.0
+offset_right = 261.0
+offset_bottom = -124.0
+theme_override_font_sizes/font_size = 30
+text = "SPACEBAR to jump"
+horizontal_alignment = 1
+
+[node name="Label4" type="Label" parent="." unique_id=932528709]
+offset_left = -607.0
+offset_top = 40.0
+offset_right = -142.0
+offset_bottom = 181.0
+theme_override_font_sizes/font_size = 30
+text = "↓   Maybe get this first"
+horizontal_alignment = 1
+script = ExtResource("6_rfktq")
+
+[node name="redText" type="Label" parent="." unique_id=1267636003]
+modulate = Color(0, 0, 1, 1)
+offset_left = 199.0
+offset_top = -111.0
+offset_right = 649.0
+offset_bottom = -24.0
+theme_override_font_sizes/font_size = 30
+text = "Uh oh 
+there's a wall.."
+horizontal_alignment = 1
+
+[node name="blackText" type="Label" parent="." unique_id=860909765]
+modulate = Color(0, 0, 0, 1)
+offset_left = 199.0
+offset_top = -191.0
+offset_right = 649.0
+offset_bottom = -104.0
+theme_override_font_sizes/font_size = 30
+text = "Woah, it
+disappeared!"
+horizontal_alignment = 1
+
+[node name="blackText2" type="Label" parent="." unique_id=1349027671]
+modulate = Color(0, 0, 0, 1)
+offset_left = -469.0
+offset_top = 260.0
+offset_right = 35.0
+offset_bottom = 347.0
+theme_override_font_sizes/font_size = 30
+text = "← Take a look at your color powers"
+horizontal_alignment = 1
+
+[node name="MovingColorPower" parent="." unique_id=311302964 instance=ExtResource("7_0urlm")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-523, 145)
+gravity_scale = 0.0
+myColor = 5

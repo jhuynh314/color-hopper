@@ -58,14 +58,6 @@ modulate = Color(1, 0, 0, 1)
 position = Vector2(487, 4)
 scale = Vector2(8.200001, 2)
 
-[node name="Label" type="Label" parent="." unique_id=675826537]
-offset_left = -367.0
-offset_top = -237.0
-offset_right = -68.0
-offset_bottom = -168.0
-theme_override_font_sizes/font_size = 50
-text = "A & D to move"
-
 [node name="MovingColorPower" parent="." unique_id=311302964 instance=ExtResource("6_hvgxt")]
 modulate = Color(1, 0, 0, 1)
 position = Vector2(-437, 136)
