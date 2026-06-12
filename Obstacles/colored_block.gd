@@ -3,7 +3,8 @@ class_name ColoredBlock extends StaticBody2D
 @export var myColor: GlobalVariables.MainColors = GlobalVariables.MainColors.RED
 
 func _ready() -> void:
-	changeColor(myColor)
+	disableAllCollisionLayers()
+	#changeColor(myColor)
 
 func changeColor(color: GlobalVariables.MainColors) -> void:
 	disableAllCollisionLayers()

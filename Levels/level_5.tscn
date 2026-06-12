@@ -1,0 +1,136 @@
+[gd_scene format=3 uid="uid://cprnqovgvcv5s"]
+
+[ext_resource type="PackedScene" uid="uid://bgpl4q3iintul" path="res://Background/game_area.tscn" id="1_321yd"]
+[ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="2_1xify"]
+[ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="3_kgnlk"]
+[ext_resource type="PackedScene" uid="uid://biu8rq0dk0kwj" path="res://Background/background.tscn" id="4_xagau"]
+[ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="5_ytgun"]
+[ext_resource type="PackedScene" uid="uid://c842agogf03ge" path="res://Obstacles/colored_block.tscn" id="6_rpnhq"]
+[ext_resource type="PackedScene" uid="uid://dhd5vebd5x326" path="res://Obstacles/moving_color_power.tscn" id="7_1xify"]
+
+[node name="Level4" type="Node2D" unique_id=268247461]
+
+[node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("1_321yd")]
+metadata/_edit_lock_ = true
+
+[node name="Player" parent="." unique_id=450061752 instance=ExtResource("2_1xify")]
+position = Vector2(-2, -62)
+
+[node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("3_kgnlk")]
+position = Vector2(481.99997, -255)
+scale = Vector2(5, 5)
+currentLevel = 4
+
+[node name="Blocks" type="Node2D" parent="." unique_id=534523327]
+
+[node name="Block" parent="Blocks" unique_id=1830325737 instance=ExtResource("5_ytgun")]
+position = Vector2(5, -8)
+scale = Vector2(8.200001, 2)
+myColor = 0
+
+[node name="Block5" parent="Blocks" unique_id=140053464 instance=ExtResource("5_ytgun")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-160, -8)
+scale = Vector2(8.200001, 2)
+
+[node name="Block4" parent="Blocks" unique_id=237869265 instance=ExtResource("5_ytgun")]
+position = Vector2(420, 184)
+scale = Vector2(8.200001, 2)
+myColor = 0
+
+[node name="Block6" parent="Blocks" unique_id=1452011211 instance=ExtResource("5_ytgun")]
+position = Vector2(-484, 184)
+scale = Vector2(14.32, 2)
+myColor = 0
+
+[node name="Block7" parent="Blocks" unique_id=1361546167 instance=ExtResource("5_ytgun")]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(-42, 156.00005)
+rotation = 1.5707964
+scale = Vector2(14.32, 0.7999985)
+myColor = 4
+
+[node name="Block2" parent="Blocks" unique_id=1063766500 instance=ExtResource("5_ytgun")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-128, -132)
+scale = Vector2(21.2, 2)
+
+[node name="Block3" parent="Blocks" unique_id=1729696945 instance=ExtResource("5_ytgun")]
+position = Vector2(67, -172.00002)
+rotation = 1.5707964
+scale = Vector2(18.44, 2)
+myColor = 0
+
+[node name="ColoredBlock" parent="Blocks" unique_id=715435249 instance=ExtResource("6_rpnhq")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-281, 162)
+myColor = 5
+
+[node name="ColoredBlock11" parent="Blocks" unique_id=491762475 instance=ExtResource("6_rpnhq")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(391, -138)
+myColor = 5
+
+[node name="ColoredBlock5" parent="Blocks" unique_id=2102260562 instance=ExtResource("6_rpnhq")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-515, 112)
+
+[node name="ColoredBlock6" parent="Blocks" unique_id=117453755 instance=ExtResource("6_rpnhq")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-515, -80)
+
+[node name="ColoredBlock7" parent="Blocks" unique_id=1374545270 instance=ExtResource("6_rpnhq")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-366, 22)
+
+[node name="ColoredBlock8" parent="Blocks" unique_id=687600154 instance=ExtResource("6_rpnhq")]
+modulate = Color(0.294, 0, 0.51, 1)
+position = Vector2(382, 111)
+myColor = 6
+
+[node name="ColoredBlock9" parent="Blocks" unique_id=1785484 instance=ExtResource("6_rpnhq")]
+modulate = Color(0.294, 0, 0.51, 1)
+position = Vector2(283, 23)
+myColor = 6
+
+[node name="ColoredBlock10" parent="Blocks" unique_id=1089452778 instance=ExtResource("6_rpnhq")]
+modulate = Color(0.294, 0, 0.51, 1)
+position = Vector2(188, -69)
+myColor = 6
+
+[node name="ColoredBlock2" parent="Blocks" unique_id=3337357 instance=ExtResource("6_rpnhq")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-119, 220)
+myColor = 5
+
+[node name="ColoredBlock3" parent="Blocks" unique_id=398326669 instance=ExtResource("6_rpnhq")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(42, 218)
+myColor = 5
+
+[node name="ColoredBlock4" parent="Blocks" unique_id=1875395110 instance=ExtResource("6_rpnhq")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(202, 162)
+myColor = 5
+
+[node name="MovingColorPower" parent="." unique_id=311302964 instance=ExtResource("7_1xify")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-482, 117)
+gravity_scale = 0.0
+myColor = 5
+
+[node name="MovingColorPower2" parent="." unique_id=2117295445 instance=ExtResource("7_1xify")]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(420, 118)
+gravity_scale = 0.0
+myColor = 1
+
+[node name="MovingColorPower3" parent="." unique_id=1662851653 instance=ExtResource("7_1xify")]
+modulate = Color(0.294, 0, 0.51, 1)
+position = Vector2(4, -200)
+gravity_scale = 0.0
+myColor = 6
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("4_xagau")]
+myColor = 4
+colorsToChangeTo = Array[int]([4])

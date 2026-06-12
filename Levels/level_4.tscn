@@ -20,9 +20,6 @@ position = Vector2(442.99997, -229)
 scale = Vector2(5, 5)
 currentLevel = 4
 
-[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_ujo87")]
-colorsToChangeTo = Array[int]([1, 5, 7])
-
 [node name="Blocks" type="Node2D" parent="." unique_id=534523327]
 
 [node name="Block" parent="Blocks" unique_id=1830325737 instance=ExtResource("5_ben3k")]
@@ -105,3 +102,6 @@ offset_bottom = 212.0
 theme_override_colors/font_color = Color(0.933, 0.51, 0.933, 1)
 theme_override_font_sizes/font_size = 30
 text = "on their color"
+
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_ujo87")]
+colorsToChangeTo = Array[int]([1, 5, 7])

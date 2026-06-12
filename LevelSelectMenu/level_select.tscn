@@ -42,88 +42,38 @@ offset_bottom = 40.0
 [node name="LevelButton" parent="Levels" unique_id=6825471 instance=ExtResource("1_1vh88")]
 layout_mode = 0
 offset_left = 128.0
-offset_top = 206.0
+offset_top = 293.0
 offset_right = 291.0
-offset_bottom = 342.0
-buttonText = "1"
+offset_bottom = 429.0
 
 [node name="LevelButton2" parent="Levels" unique_id=2112009360 instance=ExtResource("1_1vh88")]
 layout_mode = 0
 offset_left = 328.0
-offset_top = 206.0
+offset_top = 293.0
 offset_right = 491.0
-offset_bottom = 342.0
-buttonText = "2"
+offset_bottom = 429.0
 level = 2
 
 [node name="LevelButton3" parent="Levels" unique_id=2044851489 instance=ExtResource("1_1vh88")]
 layout_mode = 0
 offset_left = 528.0
-offset_top = 206.0
+offset_top = 293.0
 offset_right = 691.0
-offset_bottom = 342.0
-buttonText = "3"
+offset_bottom = 429.0
 level = 3
 
 [node name="LevelButton4" parent="Levels" unique_id=1995041246 instance=ExtResource("1_1vh88")]
 layout_mode = 0
 offset_left = 728.0
-offset_top = 206.0
+offset_top = 293.0
 offset_right = 891.0
-offset_bottom = 342.0
-buttonText = "4"
+offset_bottom = 429.0
 level = 4
 
 [node name="LevelButton5" parent="Levels" unique_id=1882869874 instance=ExtResource("1_1vh88")]
 layout_mode = 0
 offset_left = 928.0
-offset_top = 206.0
+offset_top = 293.0
 offset_right = 1091.0
-offset_bottom = 342.0
-buttonText = "5"
+offset_bottom = 429.0
 level = 5
-
-[node name="LevelButton6" parent="Levels" unique_id=32834195 instance=ExtResource("1_1vh88")]
-layout_mode = 0
-offset_left = 128.0
-offset_top = 366.0
-offset_right = 291.0
-offset_bottom = 502.0
-buttonText = "6"
-level = 6
-
-[node name="LevelButton7" parent="Levels" unique_id=69742602 instance=ExtResource("1_1vh88")]
-layout_mode = 0
-offset_left = 328.0
-offset_top = 366.0
-offset_right = 491.0
-offset_bottom = 502.0
-buttonText = "7"
-level = 7
-
-[node name="LevelButton8" parent="Levels" unique_id=1798769355 instance=ExtResource("1_1vh88")]
-layout_mode = 0
-offset_left = 528.0
-offset_top = 366.0
-offset_right = 691.0
-offset_bottom = 502.0
-buttonText = "8"
-level = 8
-
-[node name="LevelButton9" parent="Levels" unique_id=515702118 instance=ExtResource("1_1vh88")]
-layout_mode = 0
-offset_left = 728.0
-offset_top = 366.0
-offset_right = 891.0
-offset_bottom = 502.0
-buttonText = "9"
-level = 9
-
-[node name="LevelButton10" parent="Levels" unique_id=1170004367 instance=ExtResource("1_1vh88")]
-layout_mode = 0
-offset_left = 928.0
-offset_top = 366.0
-offset_right = 1091.0
-offset_bottom = 502.0
-buttonText = "10"
-level = 10

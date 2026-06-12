@@ -28,15 +28,10 @@ var colorToColorDictionary: Dictionary = {
 
 var levelsUnlockedDictionary: Dictionary = {
 	1: true,
-	2: true,
-	3: true,
-	4: true,
+	2: false,
+	3: false,
+	4: false,
 	5: false,
-	6: false,
-	7: false,
-	8: false,
-	9: false,
-	10: false,
 }
 
 var levelsCompletedDictionary: Dictionary = {
@@ -57,4 +52,5 @@ var levelToSceneDictionary: Dictionary = {
 	2: "res://Levels/level_2.tscn",
 	3: "res://Levels/level_3.tscn",
 	4: "res://Levels/level_4.tscn",
+	5: "res://Levels/level_5.tscn",
 }

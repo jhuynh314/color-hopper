@@ -18,7 +18,7 @@ position = Vector2(-516, 129)
 [node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("4_pml6m")]
 position = Vector2(-488, -264)
 scale = Vector2(5, 5)
-currentLevel = 4
+currentLevel = 2
 
 [node name="Block" parent="." unique_id=1830325737 instance=ExtResource("5_vltsr")]
 position = Vector2(-486, 196)
@@ -112,7 +112,6 @@ gravity_scale = 0.0
 myColor = 3
 
 [node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_bcgyv")]
-z_index = -1
 myColor = 5
 colorsToChangeTo = Array[int]([5, 1])
 metadata/_edit_lock_ = true
