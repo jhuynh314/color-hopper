@@ -119,9 +119,9 @@ metadata/_edit_lock_ = true
 
 [node name="blackText2" type="Label" parent="." unique_id=472550707]
 modulate = Color(0, 0, 0, 1)
-offset_left = -351.0
+offset_left = -414.0
 offset_top = 260.0
-offset_right = 153.0
+offset_right = 90.0
 offset_bottom = 347.0
 theme_override_font_sizes/font_size = 30
 text = "← Watch your color order"

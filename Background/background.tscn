@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dby5p80dbjjka" path="res://Background/box_select.tscn" id="3_msi1s"]
 
 [node name="Background" type="Node2D" unique_id=1074621605]
+z_index = -1
 script = ExtResource("1_jdlmo")
 colorsToChangeTo = Array[int]([0, 1, 4])
 

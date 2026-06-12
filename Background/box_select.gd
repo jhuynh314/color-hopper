@@ -1,7 +1,6 @@
 extends Control
 
 func updateColor(color: GlobalVariables.MainColors):
-	print("updating box select color")
 	$ColorRect.color = GlobalVariables.colorToColorDictionary[color]
 
 func selectBox():

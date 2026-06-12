@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://c842agogf03ge"]
+
+[ext_resource type="Script" uid="uid://c4t4kqobv11hv" path="res://Obstacles/colored_block.gd" id="1_u32jg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nvfua"]
+
+[node name="ColoredBlock" type="StaticBody2D" unique_id=715435249 groups=["Blocks"]]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_u32jg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=922308592]
+scale = Vector2(5, 5)
+shape = SubResource("RectangleShape2D_nvfua")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1645045190]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -50.0
+offset_top = -50.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.4972186, 2.4950433)
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=214918578]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.999996
+offset_top = -43.999996
+offset_right = -6.999996
+offset_bottom = -6.999996
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2.340001, 2.3400002)

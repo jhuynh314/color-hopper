@@ -1,7 +1,7 @@
 extends Node2D
 
 var gravity = 1000
-enum MainColors {BLACK, RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET}
+enum MainColors {BLACK, RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET, WHITE}
 
 var colorToLayerDictionary: Dictionary = {
 	MainColors.BLACK: 1,
@@ -12,6 +12,7 @@ var colorToLayerDictionary: Dictionary = {
 	MainColors.BLUE: 6,
 	MainColors.INDIGO: 7,
 	MainColors.VIOLET: 8,
+	MainColors.WHITE: 9
 }
 var colorToColorDictionary: Dictionary = {
 	MainColors.BLACK: Color.BLACK,
@@ -22,6 +23,7 @@ var colorToColorDictionary: Dictionary = {
 	MainColors.BLUE: Color.BLUE,
 	MainColors.INDIGO: Color.INDIGO,
 	MainColors.VIOLET: Color.VIOLET,
+	MainColors.WHITE: Color.WHITE,
 }
 
 var levelsUnlockedDictionary: Dictionary = {

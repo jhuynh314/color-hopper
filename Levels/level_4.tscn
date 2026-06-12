@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://drj0qsu6sxy7b" path="res://Player/player.tscn" id="3_waaef"]
 [ext_resource type="PackedScene" uid="uid://j82eso8di2j7" path="res://Obstacles/win_area.tscn" id="4_fqog2"]
 [ext_resource type="PackedScene" uid="uid://ds05h0dfkh10j" path="res://Obstacles/block.tscn" id="5_ben3k"]
-[ext_resource type="PackedScene" uid="uid://dhd5vebd5x326" path="res://Obstacles/moving_color_power.tscn" id="6_hvgxt"]
+[ext_resource type="PackedScene" uid="uid://c842agogf03ge" path="res://Obstacles/colored_block.tscn" id="5_hvgxt"]
 
-[node name="Level1" type="Node2D" unique_id=268247461]
+[node name="Level4" type="Node2D" unique_id=268247461]
 
 [node name="GameArea" parent="." unique_id=642274818 instance=ExtResource("2_hvgxt")]
 metadata/_edit_lock_ = true
@@ -16,59 +16,92 @@ metadata/_edit_lock_ = true
 position = Vector2(-516, 129)
 
 [node name="WinArea" parent="." unique_id=726625097 instance=ExtResource("4_fqog2")]
-position = Vector2(483, -126)
+position = Vector2(442.99997, -229)
 scale = Vector2(5, 5)
 currentLevel = 4
 
-[node name="Block" parent="." unique_id=1830325737 instance=ExtResource("5_ben3k")]
+[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_ujo87")]
+colorsToChangeTo = Array[int]([1, 5, 7])
+
+[node name="Blocks" type="Node2D" parent="." unique_id=534523327]
+
+[node name="Block" parent="Blocks" unique_id=1830325737 instance=ExtResource("5_ben3k")]
 position = Vector2(-486, 196)
 scale = Vector2(8.200001, 2)
 myColor = 0
 
-[node name="Block2" parent="." unique_id=606426663 instance=ExtResource("5_ben3k")]
-modulate = Color(0, 0, 1, 1)
-position = Vector2(-244, 196)
-scale = Vector2(8.200001, 2)
-myColor = 5
-
-[node name="Block3" parent="." unique_id=75427165 instance=ExtResource("5_ben3k")]
+[node name="ColoredBlock" parent="Blocks" unique_id=715435249 instance=ExtResource("5_hvgxt")]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(0, 196)
-scale = Vector2(8.200001, 2)
+position = Vector2(-299, 172)
 
-[node name="Block4" parent="." unique_id=1983499785 instance=ExtResource("5_ben3k")]
-modulate = Color(0, 0, 1, 1)
-position = Vector2(239, 196)
-scale = Vector2(8.200001, 2)
-myColor = 5
-
-[node name="Block5" parent="." unique_id=287696668 instance=ExtResource("5_ben3k")]
+[node name="ColoredBlock2" parent="Blocks" unique_id=1576580484 instance=ExtResource("5_hvgxt")]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(487, 196)
-scale = Vector2(8.200001, 2)
+position = Vector2(194, 85)
 
-[node name="Block6" parent="." unique_id=1880751813 instance=ExtResource("5_ben3k")]
-modulate = Color(0, 0, 1, 1)
-position = Vector2(487, 100)
-scale = Vector2(8.200001, 2)
-myColor = 5
-
-[node name="Block7" parent="." unique_id=1306711904 instance=ExtResource("5_ben3k")]
+[node name="ColoredBlock3" parent="Blocks" unique_id=40875327 instance=ExtResource("5_hvgxt")]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(487, 4)
-scale = Vector2(8.200001, 2)
+position = Vector2(-144, -71)
 
-[node name="MovingColorPower" parent="." unique_id=311302964 instance=ExtResource("6_hvgxt")]
-modulate = Color(1, 0, 0, 1)
-position = Vector2(-437, 136)
-myColor = 1
-
-[node name="MovingColorPower2" parent="." unique_id=1838817636 instance=ExtResource("6_hvgxt")]
+[node name="ColoredBlock4" parent="Blocks" unique_id=1286214356 instance=ExtResource("5_hvgxt")]
 modulate = Color(0, 0, 1, 1)
-position = Vector2(-516, 161)
+position = Vector2(-134, 171)
 myColor = 5
 
-[node name="Background" parent="." unique_id=1074621605 instance=ExtResource("1_ujo87")]
-z_index = -1
+[node name="ColoredBlock5" parent="Blocks" unique_id=1227916689 instance=ExtResource("5_hvgxt")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-408, -90)
 myColor = 5
-colorsToChangeTo = Array[int]([])
+
+[node name="ColoredBlock6" parent="Blocks" unique_id=827883792 instance=ExtResource("5_hvgxt")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(310, -121)
+myColor = 5
+
+[node name="ColoredBlock7" parent="Blocks" unique_id=140836703 instance=ExtResource("5_hvgxt")]
+modulate = Color(0.933, 0.51, 0.933, 1)
+position = Vector2(28, 173)
+myColor = 7
+
+[node name="ColoredBlock9" parent="Blocks" unique_id=503726325 instance=ExtResource("5_hvgxt")]
+modulate = Color(0.933, 0.51, 0.933, 1)
+position = Vector2(-273, -77)
+myColor = 7
+
+[node name="Block2" parent="Blocks" unique_id=420679979 instance=ExtResource("5_ben3k")]
+modulate = Color(0.933, 0.51, 0.933, 1)
+position = Vector2(37, 2)
+scale = Vector2(6.88, 1)
+myColor = 7
+
+[node name="Block3" parent="Blocks" unique_id=1628891346 instance=ExtResource("5_ben3k")]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-144, -211)
+scale = Vector2(33.386177, 1)
+myColor = 5
+
+[node name="Label" type="Label" parent="." unique_id=798401939]
+offset_left = -502.0
+offset_top = -306.0
+offset_right = -244.0
+offset_bottom = -264.0
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Sometimes things..."
+
+[node name="Label2" type="Label" parent="." unique_id=1354874057]
+offset_left = -164.0
+offset_top = 37.0
+offset_right = 94.0
+offset_bottom = 79.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "only appear..."
+
+[node name="Label3" type="Label" parent="." unique_id=247843801]
+offset_left = 226.0
+offset_top = 170.0
+offset_right = 484.0
+offset_bottom = 212.0
+theme_override_colors/font_color = Color(0.933, 0.51, 0.933, 1)
+theme_override_font_sizes/font_size = 30
+text = "on their color"
